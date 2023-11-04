@@ -2,7 +2,7 @@
 Servicios para aplicación twitter  
 
 
-
+<br><br><br>
 
 
 
@@ -11,6 +11,7 @@ El proyecto consiste en servicios (métodos) que acceden datos de un archivo en 
 
 ![alt text](https://github.com/Konstrictorman/twiteerBackEnd/blob/master/src/main/resources/Business%20model.png?raw=true)  
 
+<br><br><br>
 
 ## Arquitectura de la aplicación
 A continuación se diagrama una abstracción de la arquitectura de la aplicación, modelando la entidad "Tweet"
@@ -21,6 +22,8 @@ Los métodos candidatos a ser mapeados como funciones Lambda, están identificad
 
 > co.edu.escualing.twitter.services
 
+
+<br><br><br>
 
 ## Metáfora de la arquitectura
 
@@ -40,11 +43,21 @@ El API Gateway es como el staff de meseros encargados de tomar las órdenes de l
 
 Los modelos o POJO actúan como las recetas de cada palta.  Definen la estructura y los ingredientes que se necesitan para cada plato.
 
+<br><br><br>
 
-
-## Built with
+## Stack de tecnologías
 
 - Java 11
 - AWS Lambda
 - AWS ApiGateway
 
+<br><br><br>
+## Build
+
+> mvn clean compile assembly:single
+<br><br><br>
+## Referencias
+
+- https://docs.aws.amazon.com/es_es/apigateway/latest/developerguide/how-to-method-settings-execution-console.html
+- https://www.baeldung.com/java-aws-lambda
+- https://github.com/awsdocs/aws-lambda-developer-guide/tree/main

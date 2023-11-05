@@ -45,6 +45,43 @@ Los modelos o POJO actúan como las recetas de cada palta.  Definen la estructur
 
 <br><br><br>
 
+## Recursos
+
+Se han identificado los siguientes recursos para el REST API a exponerse vía API Gateway:
+
+### User
+
+- **/users**  - GET para obtener los perfiles de los usuarios
+- **/users**  - POST para crear nuevos usuarios
+- **/users/{userId}** -  GET | DELETE | PATCH para obtener, borrar o actualizar un usuario específico
+- **/users/{userId}/followers** - GET para obtener los seguidores del usuario
+- **/users/{userId}/following**  - GET para obtner el listado de usuarios que un usuario en particular sigue
+
+### Tweet
+
+- **/tweets** - GET para obtener un listado de tweets
+- **/tweets** -  POST para crear un nuevo tweet
+- **/tweets/{tweetId}** - GET | DELETE | PATCH para obtener, obrrar o actualizar un tweet específico
+- **/tweets/{tweetId}/likes** - GET para obtener el listado de usuarios a quien les ha gustado el tweet
+- **/tweets/{tweetId}/retweets** - GET para obtener el listado de usuarios que han hecho retweet
+- **/tweets/pages?offset={m}&limit={n}** - GET para obtener un listado de usuarios paginado
+
+### Like
+
+- **/likes** - POST para crear un nuevo like
+- **/likes/{likeId}** - DELETE para eliminar un like específico
+
+### Follow
+
+- **/follows** - POST para seguir un nuevo usuario
+- **/follows/{folowwId}** - DELETE para eliminar un follow específico
+
+### Retweet
+
+- **/retweets** - POST para hacer un nuevo retweet
+- **/retweets/{retweetId}** - DELETE para eliminar un retweet específico
+
+<br><br><br>
 ## Stack de tecnologías
 
 - Java 11

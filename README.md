@@ -92,9 +92,11 @@ Se han identificado los siguientes recursos para el REST API a exponerse vía AP
 ## Build
 
 > mvn clean compile assembly:single
+
 <br><br><br>
 ## Referencias
 
 - https://docs.aws.amazon.com/es_es/apigateway/latest/developerguide/how-to-method-settings-execution-console.html
 - https://www.baeldung.com/java-aws-lambda
 - https://github.com/awsdocs/aws-lambda-developer-guide/tree/main
+<br><br><br>
